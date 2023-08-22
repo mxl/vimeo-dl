@@ -202,6 +202,7 @@ func (mj *MasterJson) CreateVideoFile(output io.Writer, masterJsonUrl *url.URL, 
 		if err != nil {
 			return err
 		}
+        return nil
 	}
 
 	return nil
@@ -230,6 +231,7 @@ func (mj *MasterJson) CreateAudioFile(output io.Writer, masterJsonUrl *url.URL, 
 		if err != nil {
 			return err
 		}
+        return nil
 	}
 
 	return nil

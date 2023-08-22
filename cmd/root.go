@@ -39,6 +39,8 @@ var rootCmd = &cobra.Command{
 	Short:   "vimeo-dl " + config.Version,
 	Version: config.Version,
 	Run: func(cmd *cobra.Command, args []string) {
+
+	    fmt.Println("RUN")
 		client := vimeo.NewClient()
 		if len(userAgent) > 0 {
 			client.UserAgent = userAgent
